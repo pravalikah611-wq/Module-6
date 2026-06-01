@@ -24,8 +24,26 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ---
 
-## 💻 Program
+## 💻 Program:
 
-## Output
+class Number:
+    def __init__(self, value):
+        self.value = value
 
-## Result
+    def __lt__(self, other):
+        return self.value < other.value
+
+a = Number(10)
+b = Number(20)
+
+print(a < b)
+
+<img width="1457" height="657" alt="image" src="https://github.com/user-attachments/assets/58e86c49-cc1d-42cb-95ee-6a9e56c89c34" />
+
+
+## Output:
+<img width="1457" height="657" alt="image" src="https://github.com/user-attachments/assets/4db8da5e-7348-4813-a53e-15140d2c43b3" />
+
+
+## Result:
+The program demonstrates operator overloading using the < operator, and it successfully compares two objects of the custom class.
